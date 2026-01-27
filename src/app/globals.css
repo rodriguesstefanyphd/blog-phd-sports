@@ -28,12 +28,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FF6B35;
+  background: #ffdc61;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff8555;
+  background: #ffe580;
 }
 
 /* Animated gradient background */
@@ -99,7 +99,7 @@ body {
 
 /* Text gradient */
 .text-gradient {
-  background: linear-gradient(135deg, #FF6B35 0%, #FFD700 100%);
+  background: linear-gradient(135deg, #ffdc61 0%, #ffd700 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
