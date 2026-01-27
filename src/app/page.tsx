@@ -53,7 +53,7 @@ export default function Home() {
                 <motion.a
                   key={item}
                   href="#"
-                  className="text-white hover:text-[#FF6B35] transition-colors font-medium"
+                  className="text-white hover:text-[#ffdc61] transition-colors font-medium"
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 * i }}
@@ -111,7 +111,7 @@ export default function Home() {
             className="text-center"
           >
             <motion.span 
-              className="inline-block bg-[#ffdc61]/20 text-[#FF6B35] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[#FF6B35]/30"
+              className="inline-block bg-[#ffdc61]/20 text-[#ffdc61] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[#ffdc61]/30"
               animate={{ scale: [1, 1.05, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
@@ -198,7 +198,7 @@ export default function Home() {
                     </span>
                   </div>
                   <div className="p-6 bg-[#131d2f]">
-                    <h4 className="text-xl font-bold text-white mb-3 group-hover:text-[#FF6B35] transition-colors">
+                    <h4 className="text-xl font-bold text-white mb-3 group-hover:text-[#ffdc61] transition-colors">
                       {noticia.titulo}
                     </h4>
                     <p className="text-gray-300 mb-4 line-clamp-2">{noticia.resumo}</p>
@@ -206,7 +206,7 @@ export default function Home() {
                       <span className="text-gray-400 text-sm">{noticia.data}</span>
                       <motion.span
                         whileHover={{ x: 5 }}
-                        className="text-[#FF6B35] font-semibold flex items-center gap-2"
+                        className="text-[#ffdc61] font-semibold flex items-center gap-2"
                       >
                         Ler mais 
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -242,7 +242,7 @@ export default function Home() {
                 whileTap={{ scale: 0.95 }}
                 className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
                   categoriaAtiva === cat 
-                    ? 'bg-[#ffdc61] text-white shadow-lg shadow-[#FF6B35]/30' 
+                    ? 'bg-[#ffdc61] text-white shadow-lg shadow-[#ffdc61]/30' 
                     : 'bg-white text-[#131d2f] hover:bg-[#131d2f] hover:text-white shadow-md'
                 }`}
               >
@@ -299,7 +299,7 @@ export default function Home() {
                         <span className="text-gray-400 text-sm">{noticia.data}</span>
                       </div>
                       
-                      <h4 className="text-lg font-bold text-[#131d2f] mb-2 group-hover:text-[#FF6B35] transition-colors line-clamp-2">
+                      <h4 className="text-lg font-bold text-[#131d2f] mb-2 group-hover:text-[#ffdc61] transition-colors line-clamp-2">
                         {noticia.titulo}
                       </h4>
                       
@@ -308,7 +308,7 @@ export default function Home() {
                       <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                         <span className="text-sm text-gray-500">Por {noticia.autor}</span>
                         <motion.span
-                          whileHover={{ scale: 1.1, color: '#FF6B35' }}
+                          whileHover={{ scale: 1.1, color: '#ffdc61' }}
                           className="text-[#131d2f] font-semibold text-sm"
                         >
                           Leia →
@@ -348,7 +348,7 @@ export default function Home() {
             <input 
               type="email" 
               placeholder="Seu melhor email"
-              className="flex-1 px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#FF6B35] backdrop-blur-sm"
+              className="flex-1 px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-[#ffdc61] backdrop-blur-sm"
             />
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -378,7 +378,7 @@ export default function Home() {
             </div>
             
             <div>
-              <h5 className="font-bold mb-4 text-[#FF6B35]">Links Rápidos</h5>
+              <h5 className="font-bold mb-4 text-[#ffdc61]">Links Rápidos</h5>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Notícias</a></li>
@@ -388,7 +388,7 @@ export default function Home() {
             </div>
             
             <div>
-              <h5 className="font-bold mb-4 text-[#FF6B35]">Categorias</h5>
+              <h5 className="font-bold mb-4 text-[#ffdc61]">Categorias</h5>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white transition-colors">Empreendedorismo</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Expansão</a></li>
@@ -398,7 +398,7 @@ export default function Home() {
             </div>
             
             <div>
-              <h5 className="font-bold mb-4 text-[#FF6B35]">Contato</h5>
+              <h5 className="font-bold mb-4 text-[#ffdc61]">Contato</h5>
               <ul className="space-y-2 text-gray-400">
                 <li>contato@phdsports.com.br</li>
                 <li>(41) 3000-0000</li>

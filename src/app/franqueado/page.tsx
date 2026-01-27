@@ -42,7 +42,7 @@ export default function FranqueadoPage() {
 
   const investimentos = [
     { tipo: 'Express', area: '200-400m²', valor: 'R$ 250.000', cor: 'from-blue-500 to-blue-600' },
-    { tipo: 'Standard', area: '400-800m²', valor: 'R$ 450.000', cor: 'from-[#FF6B35] to-orange-600' },
+    { tipo: 'Standard', area: '400-800m²', valor: 'R$ 450.000', cor: 'from-[#ffdc61] to-yellow-500' },
     { tipo: 'Premium', area: '800m²+', valor: 'R$ 700.000', cor: 'from-yellow-500 to-yellow-600' },
   ];
 
@@ -69,7 +69,7 @@ export default function FranqueadoPage() {
             <Link href="/">
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="text-white hover:text-[#FF6B35] font-semibold transition-colors"
+                className="text-white hover:text-[#ffdc61] font-semibold transition-colors"
               >
                 ← Voltar ao Blog
               </motion.button>
@@ -94,7 +94,7 @@ export default function FranqueadoPage() {
             <motion.span 
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
-              className="inline-block bg-[#ffdc61]/20 text-[#FF6B35] px-6 py-2 rounded-full text-sm font-bold mb-6 border border-[#FF6B35]/30"
+              className="inline-block bg-[#ffdc61]/20 text-[#ffdc61] px-6 py-2 rounded-full text-sm font-bold mb-6 border border-[#ffdc61]/30"
             >
               🚀 SEJA UM FRANQUEADO
             </motion.span>
@@ -123,7 +123,7 @@ export default function FranqueadoPage() {
                   transition={{ delay: 0.2 + i * 0.1 }}
                   className="text-center"
                 >
-                  <div className="text-3xl md:text-4xl font-black text-[#FF6B35]">{stat.num}</div>
+                  <div className="text-3xl md:text-4xl font-black text-[#ffdc61]">{stat.num}</div>
                   <div className="text-gray-400 text-sm">{stat.label}</div>
                 </motion.div>
               ))}
@@ -148,7 +148,7 @@ export default function FranqueadoPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#131d2f] mb-4">
-              Por que ser um <span className="text-[#FF6B35]">Franqueado PHD?</span>
+              Por que ser um <span className="text-[#ffdc61]">Franqueado PHD?</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Oferecemos todo o suporte necessário para você ter sucesso no mercado fitness
@@ -185,7 +185,7 @@ export default function FranqueadoPage() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-[#131d2f] mb-4">
-              Modelos de <span className="text-[#FF6B35]">Investimento</span>
+              Modelos de <span className="text-[#ffdc61]">Investimento</span>
             </h2>
             <p className="text-gray-600">Escolha o formato ideal para seu perfil</p>
           </motion.div>
@@ -282,7 +282,7 @@ export default function FranqueadoPage() {
                               value={formData.nome}
                               onChange={handleChange}
                               required
-                              className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#FF6B35] focus:outline-none transition-colors text-gray-800"
+                              className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#ffdc61] focus:outline-none transition-colors text-gray-800"
                               placeholder="Digite seu nome completo"
                             />
                           </div>
@@ -296,7 +296,7 @@ export default function FranqueadoPage() {
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
-                                className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#FF6B35] focus:outline-none transition-colors text-gray-800"
+                                className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#ffdc61] focus:outline-none transition-colors text-gray-800"
                                 placeholder="seu@email.com"
                               />
                             </div>
@@ -308,7 +308,7 @@ export default function FranqueadoPage() {
                                 value={formData.telefone}
                                 onChange={handleChange}
                                 required
-                                className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#FF6B35] focus:outline-none transition-colors text-gray-800"
+                                className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#ffdc61] focus:outline-none transition-colors text-gray-800"
                                 placeholder="(00) 00000-0000"
                               />
                             </div>
@@ -323,7 +323,7 @@ export default function FranqueadoPage() {
                                 value={formData.cidade}
                                 onChange={handleChange}
                                 required
-                                className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#FF6B35] focus:outline-none transition-colors text-gray-800"
+                                className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#ffdc61] focus:outline-none transition-colors text-gray-800"
                                 placeholder="Sua cidade"
                               />
                             </div>
@@ -334,7 +334,7 @@ export default function FranqueadoPage() {
                                 value={formData.estado}
                                 onChange={handleChange}
                                 required
-                                className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#FF6B35] focus:outline-none transition-colors text-gray-800"
+                                className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#ffdc61] focus:outline-none transition-colors text-gray-800"
                               >
                                 <option value="">Selecione</option>
                                 {['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'].map(uf => (
@@ -364,7 +364,7 @@ export default function FranqueadoPage() {
                               value={formData.capitalDisponivel}
                               onChange={handleChange}
                               required
-                              className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#FF6B35] focus:outline-none transition-colors text-gray-800"
+                              className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#ffdc61] focus:outline-none transition-colors text-gray-800"
                             >
                               <option value="">Selecione</option>
                               <option value="ate-300k">Até R$ 300.000</option>
@@ -380,7 +380,7 @@ export default function FranqueadoPage() {
                               name="experiencia"
                               value={formData.experiencia}
                               onChange={handleChange}
-                              className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#FF6B35] focus:outline-none transition-colors text-gray-800"
+                              className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#ffdc61] focus:outline-none transition-colors text-gray-800"
                             >
                               <option value="">Selecione</option>
                               <option value="nenhuma">Nenhuma experiência</option>
@@ -397,7 +397,7 @@ export default function FranqueadoPage() {
                               name="comoConheceu"
                               value={formData.comoConheceu}
                               onChange={handleChange}
-                              className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#FF6B35] focus:outline-none transition-colors text-gray-800"
+                              className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#ffdc61] focus:outline-none transition-colors text-gray-800"
                             >
                               <option value="">Selecione</option>
                               <option value="google">Google</option>
@@ -431,7 +431,7 @@ export default function FranqueadoPage() {
                               value={formData.mensagem}
                               onChange={handleChange}
                               rows={5}
-                              className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#FF6B35] focus:outline-none transition-colors resize-none text-gray-800"
+                              className="w-full px-4 py-4 rounded-xl border-2 border-gray-200 focus:border-[#ffdc61] focus:outline-none transition-colors resize-none text-gray-800"
                               placeholder="O que te motivou a buscar uma franquia? Qual sua expectativa?"
                             />
                           </div>
@@ -447,7 +447,7 @@ export default function FranqueadoPage() {
                           </div>
 
                           <label className="flex items-start gap-3 cursor-pointer">
-                            <input type="checkbox" required className="mt-1 w-5 h-5 accent-[#FF6B35]" />
+                            <input type="checkbox" required className="mt-1 w-5 h-5 accent-[#ffdc61]" />
                             <span className="text-sm text-gray-600">
                               Concordo em receber contato da equipe Ph.D Sports sobre oportunidades de franquia.
                             </span>
@@ -464,7 +464,7 @@ export default function FranqueadoPage() {
                           onClick={prevStep}
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
-                          className="px-6 py-3 text-[#131d2f] font-semibold hover:text-[#FF6B35] transition-colors"
+                          className="px-6 py-3 text-[#131d2f] font-semibold hover:text-[#ffdc61] transition-colors"
                         >
                           ← Voltar
                         </motion.button>
