@@ -11,11 +11,6 @@ export const metadata: Metadata = {
   title: "Ph.D Sports | Blog de Notícias e Empreendedorismo",
   description: "Descubra as últimas novidades do mundo fitness, dicas de empreendedorismo e oportunidades de negócio com a Ph.D Sports - a maior rede de academias do Brasil.",
   keywords: "Ph.D Sports, franquia academia, empreendedorismo fitness, academia franquia, negócios fitness",
-  icons: {
-    icon: "/logo-phd.png",
-    shortcut: "/logo-phd.png",
-    apple: "/logo-phd.png",
-  },
   openGraph: {
     title: "Ph.D Sports | Blog de Notícias",
     description: "Notícias e oportunidades de negócio no mundo fitness",
