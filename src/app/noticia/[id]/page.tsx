@@ -37,7 +37,7 @@ export default function NoticiaPage() {
               <motion.div whileHover={{ scale: 1.05 }}>
                 <img 
                   src="https://www.academiaphdsports.com.br/logo-phd-sports.png" 
-                  alt="PHD Sports" 
+                  alt="Ph.D Sports" 
                   className="h-12 brightness-0 invert"
                 />
               </motion.div>
@@ -130,14 +130,14 @@ export default function NoticiaPage() {
             
             {/* Conteúdo adicional simulado */}
             <p className="text-gray-700 leading-relaxed text-lg mb-6">
-              A PHD Sports continua investindo em inovação e qualidade para oferecer a melhor experiência aos seus alunos e franqueados. Com uma rede que já conta com mais de 130 unidades espalhadas pelo Brasil, a marca se consolida como uma das principais referências no setor fitness.
+              A Ph.D Sports continua investindo em inovação e qualidade para oferecer a melhor experiência aos seus alunos e franqueados. Com uma rede que já conta com mais de 130 unidades espalhadas pelo Brasil, a marca se consolida como uma das principais referências no setor fitness.
             </p>
 
             <blockquote className="bg-[#131d2f] text-white p-8 rounded-2xl my-8 border-l-4 border-[#FF6B35]">
               <p className="text-xl italic mb-4">
                 "Nosso objetivo é transformar vidas através do esporte, oferecendo estrutura de qualidade e suporte completo aos nossos franqueados."
               </p>
-              <cite className="text-[#FF6B35] font-semibold">— Diretoria PHD Sports</cite>
+              <cite className="text-[#FF6B35] font-semibold">— Diretoria Ph.D Sports</cite>
             </blockquote>
 
             <p className="text-gray-700 leading-relaxed text-lg mb-6">
@@ -145,7 +145,7 @@ export default function NoticiaPage() {
             </p>
 
             <p className="text-gray-700 leading-relaxed text-lg">
-              Para mais informações sobre oportunidades de franquia ou para conhecer a unidade mais próxima, acesse o site oficial da PHD Sports ou entre em contato através dos canais de atendimento.
+              Para mais informações sobre oportunidades de franquia ou para conhecer a unidade mais próxima, acesse o site oficial da Ph.D Sports ou entre em contato através dos canais de atendimento.
             </p>
           </div>
 
@@ -197,7 +197,7 @@ export default function NoticiaPage() {
               Quer fazer parte dessa história?
             </h3>
             <p className="text-gray-300 mb-8 max-w-xl mx-auto">
-              Seja um franqueado PHD Sports e tenha um negócio de sucesso no mercado fitness.
+              Seja um franqueado Ph.D Sports e tenha um negócio de sucesso no mercado fitness.
             </p>
             <a href="https://www.academiaphdsports.com.br/seja-franqueado" target="_blank" rel="noopener noreferrer">
               <motion.button
@@ -255,10 +255,10 @@ export default function NoticiaPage() {
       <footer className="bg-[#0a1019] text-white py-12 px-4 text-center">
         <img 
           src="https://www.academiaphdsports.com.br/logo-phd-sports.png" 
-          alt="PHD Sports" 
+          alt="Ph.D Sports" 
           className="h-10 brightness-0 invert mx-auto mb-4"
         />
-        <p className="text-gray-500">© 2026 PHD Sports - Todos os direitos reservados</p>
+        <p className="text-gray-500">© 2026 Ph.D Sports - Todos os direitos reservados</p>
       </footer>
     </div>
   );

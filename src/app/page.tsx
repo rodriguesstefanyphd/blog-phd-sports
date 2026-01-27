@@ -39,11 +39,11 @@ export default function Home() {
             >
               <img 
                 src="https://www.academiaphdsports.com.br/logo-phd-sports.png" 
-                alt="PHD Sports" 
+                alt="Ph.D Sports" 
                 className="h-12 brightness-0 invert"
               />
               <div className="hidden md:block">
-                <h1 className="text-white font-bold text-xl">PHD Sports</h1>
+                <h1 className="text-white font-bold text-xl">Ph.D Sports</h1>
                 <p className="text-gray-300 text-sm">Blog de Notícias</p>
               </div>
             </motion.div>
@@ -120,7 +120,7 @@ export default function Home() {
             
             <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
               Transforme Seu Futuro com
-              <span className="text-gradient block mt-2">PHD Sports</span>
+              <span className="text-gradient block mt-2">Ph.D Sports</span>
             </h2>
             
             <p className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-8">
@@ -369,7 +369,7 @@ export default function Home() {
             <div>
               <img 
                 src="https://www.academiaphdsports.com.br/logo-phd-sports.png" 
-                alt="PHD Sports" 
+                alt="Ph.D Sports" 
                 className="h-12 brightness-0 invert mb-4"
               />
               <p className="text-gray-400">
@@ -408,7 +408,7 @@ export default function Home() {
           </div>
           
           <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
-            <p>© 2026 PHD Sports - Todos os direitos reservados</p>
+            <p>© 2026 Ph.D Sports - Todos os direitos reservados</p>
           </div>
         </div>
       </footer>

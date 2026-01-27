@@ -60,7 +60,7 @@ export default function FranqueadoPage() {
               <motion.div whileHover={{ scale: 1.05 }}>
                 <img 
                   src="https://www.academiaphdsports.com.br/logo-phd-sports.png" 
-                  alt="PHD Sports" 
+                  alt="Ph.D Sports" 
                   className="h-12 brightness-0 invert"
                 />
               </motion.div>
@@ -392,7 +392,7 @@ export default function FranqueadoPage() {
                           </div>
 
                           <div>
-                            <label className="block text-sm font-semibold text-gray-700 mb-2">Como conheceu a PHD Sports?</label>
+                            <label className="block text-sm font-semibold text-gray-700 mb-2">Como conheceu a Ph.D Sports?</label>
                             <select
                               name="comoConheceu"
                               value={formData.comoConheceu}
@@ -449,7 +449,7 @@ export default function FranqueadoPage() {
                           <label className="flex items-start gap-3 cursor-pointer">
                             <input type="checkbox" required className="mt-1 w-5 h-5 accent-[#FF6B35]" />
                             <span className="text-sm text-gray-600">
-                              Concordo em receber contato da equipe PHD Sports sobre oportunidades de franquia.
+                              Concordo em receber contato da equipe Ph.D Sports sobre oportunidades de franquia.
                             </span>
                           </label>
                         </motion.div>
@@ -515,7 +515,7 @@ export default function FranqueadoPage() {
                   </h2>
                   
                   <p className="text-gray-600 mb-8 max-w-md mx-auto">
-                    Obrigado pelo interesse em ser um franqueado PHD Sports! 
+                    Obrigado pelo interesse em ser um franqueado Ph.D Sports! 
                     Nossa equipe entrará em contato em até 48 horas.
                   </p>
 
@@ -538,10 +538,10 @@ export default function FranqueadoPage() {
       <footer className="bg-[#0a1019] text-white py-12 px-4 text-center">
         <img 
           src="https://www.academiaphdsports.com.br/logo-phd-sports.png" 
-          alt="PHD Sports" 
+          alt="Ph.D Sports" 
           className="h-10 brightness-0 invert mx-auto mb-4"
         />
-        <p className="text-gray-500">© 2026 PHD Sports - Todos os direitos reservados</p>
+        <p className="text-gray-500">© 2026 Ph.D Sports - Todos os direitos reservados</p>
       </footer>
     </div>
   );
