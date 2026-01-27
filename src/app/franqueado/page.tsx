@@ -81,7 +81,7 @@ export default function FranqueadoPage() {
       {/* Hero */}
       <section className="gradient-bg relative overflow-hidden py-20 md:py-32">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#FF6B35] rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#ffdc61] rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
         </div>
 
@@ -94,7 +94,7 @@ export default function FranqueadoPage() {
             <motion.span 
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
-              className="inline-block bg-[#FF6B35]/20 text-[#FF6B35] px-6 py-2 rounded-full text-sm font-bold mb-6 border border-[#FF6B35]/30"
+              className="inline-block bg-[#ffdc61]/20 text-[#FF6B35] px-6 py-2 rounded-full text-sm font-bold mb-6 border border-[#FF6B35]/30"
             >
               🚀 SEJA UM FRANQUEADO
             </motion.span>
@@ -249,7 +249,7 @@ export default function FranqueadoPage() {
                           key={s}
                           className={`w-12 h-12 rounded-full flex items-center justify-center font-bold transition-all ${
                             s === step 
-                              ? 'bg-[#FF6B35] text-white scale-110' 
+                              ? 'bg-[#ffdc61] text-white scale-110' 
                               : s < step 
                                 ? 'bg-green-500 text-white' 
                                 : 'bg-gray-700 text-gray-400'
@@ -476,7 +476,7 @@ export default function FranqueadoPage() {
                           onClick={nextStep}
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
-                          className="bg-[#FF6B35] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#ff8555] transition-colors"
+                          className="bg-[#ffdc61] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#ffe580] transition-colors"
                         >
                           Próximo →
                         </motion.button>
@@ -485,7 +485,7 @@ export default function FranqueadoPage() {
                           type="submit"
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
-                          className="bg-[#FF6B35] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#ff8555] transition-colors pulse-glow"
+                          className="bg-[#ffdc61] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#ffe580] transition-colors pulse-glow"
                         >
                           Enviar Cadastro 🚀
                         </motion.button>

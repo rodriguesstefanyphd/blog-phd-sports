@@ -68,7 +68,7 @@ export default function Home() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#FF6B35] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#ff8555] transition-colors shadow-lg"
+                className="bg-[#ffdc61] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#ffe580] transition-colors shadow-lg"
               >
                 Seja Franqueado
               </motion.button>
@@ -111,7 +111,7 @@ export default function Home() {
             className="text-center"
           >
             <motion.span 
-              className="inline-block bg-[#FF6B35]/20 text-[#FF6B35] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[#FF6B35]/30"
+              className="inline-block bg-[#ffdc61]/20 text-[#FF6B35] px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[#FF6B35]/30"
               animate={{ scale: [1, 1.05, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
@@ -137,7 +137,7 @@ export default function Home() {
               <motion.button
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(255, 107, 53, 0.4)" }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#FF6B35] text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl pulse-glow"
+                className="bg-[#ffdc61] text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl pulse-glow"
               >
                 Ver Notícias
               </motion.button>
@@ -172,7 +172,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-3xl font-bold text-[#131d2f] mb-8 flex items-center gap-3"
           >
-            <span className="w-12 h-1 bg-[#FF6B35] rounded-full"></span>
+            <span className="w-12 h-1 bg-[#ffdc61] rounded-full"></span>
             Destaques
           </motion.h3>
 
@@ -193,7 +193,7 @@ export default function Home() {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#131d2f] via-transparent to-transparent" />
-                    <span className="absolute top-4 left-4 bg-[#FF6B35] text-white px-4 py-1 rounded-full text-sm font-semibold">
+                    <span className="absolute top-4 left-4 bg-[#ffdc61] text-white px-4 py-1 rounded-full text-sm font-semibold">
                       {noticia.categoria}
                     </span>
                   </div>
@@ -242,7 +242,7 @@ export default function Home() {
                 whileTap={{ scale: 0.95 }}
                 className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
                   categoriaAtiva === cat 
-                    ? 'bg-[#FF6B35] text-white shadow-lg shadow-[#FF6B35]/30' 
+                    ? 'bg-[#ffdc61] text-white shadow-lg shadow-[#FF6B35]/30' 
                     : 'bg-white text-[#131d2f] hover:bg-[#131d2f] hover:text-white shadow-md'
                 }`}
               >
@@ -262,7 +262,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-3xl font-bold text-[#131d2f] mb-8 flex items-center gap-3"
           >
-            <span className="w-12 h-1 bg-[#FF6B35] rounded-full"></span>
+            <span className="w-12 h-1 bg-[#ffdc61] rounded-full"></span>
             Todas as Notícias
           </motion.h3>
 
@@ -354,7 +354,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               type="submit"
-              className="bg-[#FF6B35] text-white px-8 py-4 rounded-full font-bold shadow-xl hover:bg-[#ff8555] transition-colors"
+              className="bg-[#ffdc61] text-white px-8 py-4 rounded-full font-bold shadow-xl hover:bg-[#ffe580] transition-colors"
             >
               Inscrever
             </motion.button>
