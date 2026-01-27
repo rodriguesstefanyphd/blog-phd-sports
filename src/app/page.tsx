@@ -64,7 +64,7 @@ export default function Home() {
               ))}
             </nav>
 
-            <Link href="/franqueado">
+            <a href="https://www.academiaphdsports.com.br/seja-franqueado" target="_blank" rel="noopener noreferrer">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -72,7 +72,7 @@ export default function Home() {
               >
                 Seja Franqueado
               </motion.button>
-            </Link>
+            </a>
           </div>
         </div>
       </motion.header>

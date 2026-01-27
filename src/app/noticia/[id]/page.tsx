@@ -43,7 +43,7 @@ export default function NoticiaPage() {
               </motion.div>
             </Link>
             
-            <Link href="/franqueado">
+            <a href="https://www.academiaphdsports.com.br/seja-franqueado" target="_blank" rel="noopener noreferrer">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -51,7 +51,7 @@ export default function NoticiaPage() {
               >
                 Seja Franqueado
               </motion.button>
-            </Link>
+            </a>
           </div>
         </div>
       </motion.header>
@@ -199,7 +199,7 @@ export default function NoticiaPage() {
             <p className="text-gray-300 mb-8 max-w-xl mx-auto">
               Seja um franqueado PHD Sports e tenha um negócio de sucesso no mercado fitness.
             </p>
-            <Link href="/franqueado">
+            <a href="https://www.academiaphdsports.com.br/seja-franqueado" target="_blank" rel="noopener noreferrer">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -207,7 +207,7 @@ export default function NoticiaPage() {
               >
                 Quero Ser Franqueado →
               </motion.button>
-            </Link>
+            </a>
           </div>
         </motion.div>
       </div>
