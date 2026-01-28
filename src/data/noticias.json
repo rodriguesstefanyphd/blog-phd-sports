@@ -1,6 +1,18 @@
 {
   "noticias": [
     {
+      "id": 13,
+      "titulo": "O Poder do Propósito: Como Empreender com Fé Transforma Negócios e Vidas",
+      "resumo": "Viktor Rossa, CEO da Ph.D Sports, compartilha como a missão de levar felicidade aos clientes, aliada a princípios de fé, construiu uma das maiores redes de academias do Brasil.",
+      "conteudo": "Em um mercado cada vez mais competitivo, onde números e resultados financeiros dominam as conversas, existe um diferencial que separa negócios comuns de empresas extraordinárias: o propósito. Mais do que uma estratégia de marketing, empreender com propósito significa construir algo maior que você mesmo — e quando esse propósito se alinha com princípios de fé, os resultados transcendem qualquer expectativa.\n\n## O Chamado para Empreender\n\nA Bíblia nos ensina em Provérbios 16:3: \"Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos.\" Esse versículo não fala apenas sobre oração, mas sobre intencionalidade. Quando um empreendedor dedica seu trabalho a um propósito maior, cada decisão, cada desafio e cada conquista ganham um novo significado.\n\nColossenses 3:23 reforça: \"Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens.\" Essa perspectiva transforma a rotina do empreendedor. Não se trata apenas de abrir uma empresa para lucrar, mas de servir pessoas, impactar vidas e deixar um legado.\n\n## A Missão da Ph.D Sports: Felicidade Como Propósito\n\nA Ph.D Sports nasceu com uma missão clara e poderosa: **\"Incentivar a prática de atividade física proporcionando qualidade de vida, buscando a melhoria contínua e o aumento da autoestima em prol da felicidade de nossos clientes.\"**\n\nEssa não é apenas uma frase institucional. É o norte que guia cada decisão da rede, desde a escolha dos equipamentos até o treinamento das equipes. Quando o propósito é genuíno, ele se reflete em cada detalhe.\n\n\"Nossa missão não é apenas construir academias, é transformar vidas. Quando alguém entra em uma unidade Ph.D Sports, queremos que essa pessoa saia mais feliz, mais confiante, mais viva. Esse é o nosso chamado\", afirma Viktor Rossa, CEO da Ph.D Sports.\n\n## Fé e Negócios: Uma Combinação Poderosa\n\nJeremias 29:11 nos lembra: \"Porque eu bem sei os planos que tenho para vocês, diz o Senhor, planos de paz e não de mal, para dar-lhes um futuro e uma esperança.\" Empreendedores que constroem seus negócios sobre fundamentos de fé entendem que os desafios são temporários, mas o propósito é eterno.\n\nIsso não significa que o caminho será fácil. Pelo contrário. Mas quando você sabe por que está fazendo o que faz, a resiliência se torna natural. Os obstáculos se transformam em oportunidades de crescimento.\n\n## O Impacto de um Negócio com Propósito\n\nEmpresas movidas por propósito não apenas prosperam financeiramente — elas criam comunidades. Na Ph.D Sports, isso se traduz em mais de 140 unidades espalhadas pelo Brasil, milhares de alunos transformados e centenas de franqueados que compartilham da mesma visão.\n\n\"Quando você empreende com propósito, atrai pessoas que acreditam no mesmo que você. Nossos franqueados não são apenas investidores, são parceiros de missão. Juntos, estamos levando saúde, bem-estar e felicidade para cada vez mais pessoas\", destaca Viktor Rossa.\n\nMateus 5:16 nos orienta: \"Assim brilhe a luz de vocês diante dos homens, para que vejam as suas boas obras e glorifiquem ao Pai de vocês, que está nos céus.\" Um negócio com propósito é uma luz que ilumina não apenas o empreendedor, mas todos ao seu redor.\n\n## Construindo um Legado\n\nO verdadeiro sucesso no empreendedorismo não se mede apenas em faturamento ou número de unidades. Mede-se no impacto que você deixa nas pessoas. Quantas vidas foram transformadas? Quantas famílias foram beneficiadas? Quantos sonhos foram realizados?\n\nA Ph.D Sports entende isso profundamente. Cada aluno que melhora sua saúde, cada franqueado que realiza o sonho do negócio próprio, cada colaborador que cresce profissionalmente — tudo isso faz parte de um propósito maior.\n\n\"Nosso slogan é 'Muito Além do Treino', e isso resume tudo. Não estamos apenas no negócio de academias. Estamos no negócio de transformar vidas, de levar felicidade, de fazer a diferença. Esse é o propósito que nos move todos os dias\", conclui o CEO Viktor Rossa.\n\n## O Convite ao Empreendedor\n\nSe você está pensando em empreender ou já possui um negócio, faça a si mesmo uma pergunta: qual é o seu propósito? O que move você além do lucro? Que legado você quer deixar?\n\nQuando você encontra essas respostas e as alinha com princípios sólidos de fé, descobre que empreender se torna mais do que uma profissão — se torna um chamado. E como diz Filipenses 4:13: \"Tudo posso naquele que me fortalece.\"\n\nO mercado fitness brasileiro continua em expansão, e a Ph.D Sports segue sua missão de levar felicidade a cada vez mais pessoas. Para aqueles que desejam fazer parte dessa jornada, a rede oferece oportunidades de franquia para empreendedores que compartilham do mesmo propósito.",
+      "imagem": "https://images.unsplash.com/photo-1552508744-1696d4464960?w=800",
+      "categoria": "Empreendedorismo",
+      "autor": "Redação PHD",
+      "data": "2026-01-28",
+      "destaque": true,
+      "citacaoCeo": true
+    },
+    {
       "id": 12,
       "titulo": "O 'Meio-Termo Premium': Como a Ph.D Sports Criou o Modelo de Academia Que Investidores Querem Financiar",
       "resumo": "Fusão entre Ph.D Sports e VS Gold inaugura uma estratégia de múltiplos modelos de franquia, acelera a consolidação do mercado fitness no Paraná e posiciona o grupo para expansão nacional.",
@@ -9,7 +21,7 @@
       "categoria": "Institucional",
       "autor": "Redação PHD",
       "data": "2026-01-27",
-      "destaque": true,
+      "destaque": false,
       "local": "Curitiba/Londrina"
     },
     {
@@ -21,7 +33,7 @@
       "categoria": "Tecnologia",
       "autor": "Lucas Ferreira",
       "data": "2026-01-26",
-      "destaque": true
+      "destaque": false
     },
     {
       "id": 8,

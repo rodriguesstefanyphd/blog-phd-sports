@@ -6,7 +6,7 @@
   <!-- Página Principal -->
   <url>
     <loc>https://noticias.academiaphdsports.com.br/</loc>
-    <lastmod>2026-01-27</lastmod>
+    <lastmod>2026-01-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,6 +17,26 @@
     <lastmod>2026-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  
+  <!-- Notícia: Empreender com Propósito -->
+  <url>
+    <loc>https://noticias.academiaphdsports.com.br/noticia/13</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Ph.D Sports Blog</news:name>
+        <news:language>pt</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-28</news:publication_date>
+      <news:title>O Poder do Propósito: Como Empreender com Fé Transforma Negócios e Vidas</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1552508744-1696d4464960?w=800</image:loc>
+      <image:title>Empreender com Propósito e Fé</image:title>
+    </image:image>
   </url>
   
   <!-- Notícia: Fusão Ph.D Sports e VS Gold -->
