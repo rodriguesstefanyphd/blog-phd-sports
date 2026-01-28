@@ -249,7 +249,7 @@ export default function FranqueadoPage() {
                           key={s}
                           className={`w-12 h-12 rounded-full flex items-center justify-center font-bold transition-all ${
                             s === step 
-                              ? 'bg-[#ffdc61] text-white scale-110' 
+                              ? 'bg-[#ffdc61] text-[#131d2f] scale-110' 
                               : s < step 
                                 ? 'bg-green-500 text-white' 
                                 : 'bg-gray-700 text-gray-400'
@@ -476,7 +476,7 @@ export default function FranqueadoPage() {
                           onClick={nextStep}
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
-                          className="bg-[#ffdc61] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#ffe580] transition-colors"
+                          className="bg-[#ffdc61] text-[#131d2f] px-8 py-3 rounded-full font-semibold hover:bg-[#ffe580] transition-colors"
                         >
                           Próximo →
                         </motion.button>
@@ -485,7 +485,7 @@ export default function FranqueadoPage() {
                           type="submit"
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
-                          className="bg-[#ffdc61] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#ffe580] transition-colors pulse-glow"
+                          className="bg-[#ffdc61] text-[#131d2f] px-8 py-3 rounded-full font-semibold hover:bg-[#ffe580] transition-colors pulse-glow"
                         >
                           Enviar Cadastro 🚀
                         </motion.button>

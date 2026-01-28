@@ -46,7 +46,7 @@ export default function NoticiaClient({ noticia, outrasNoticias }: Props) {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#ffdc61] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#ffe580] transition-colors shadow-lg"
+                className="bg-[#ffdc61] text-[#131d2f] px-6 py-2 rounded-full font-semibold hover:bg-[#ffe580] transition-colors shadow-lg"
               >
                 Seja Franqueado
               </motion.button>
@@ -72,7 +72,7 @@ export default function NoticiaClient({ noticia, outrasNoticias }: Props) {
             <motion.span 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="inline-block bg-[#ffdc61] text-white px-4 py-2 rounded-full text-sm font-semibold mb-4"
+              className="inline-block bg-[#ffdc61] text-[#131d2f] px-4 py-2 rounded-full text-sm font-semibold mb-4"
             >
               {noticia.categoria}
             </motion.span>
@@ -200,7 +200,7 @@ export default function NoticiaClient({ noticia, outrasNoticias }: Props) {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-[#ffdc61] text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:bg-[#ffe580] transition-colors pulse-glow"
+                className="bg-[#ffdc61] text-[#131d2f] px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:bg-[#ffe580] transition-colors pulse-glow"
               >
                 Quero Ser Franqueado →
               </motion.button>
