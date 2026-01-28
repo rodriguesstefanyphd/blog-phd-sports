@@ -203,7 +203,7 @@ export default function Home() {
                     </h4>
                     <p className="text-gray-300 mb-4 line-clamp-2">{noticia.resumo}</p>
                     <div className="flex items-center justify-between">
-                      <span className="text-gray-400 text-sm">{noticia.data}</span>
+                      <span className="text-gray-400 text-sm">{new Date(noticia.data).toLocaleDateString('pt-BR')}</span>
                       <motion.span
                         whileHover={{ x: 5 }}
                         className="text-[#ffdc61] font-semibold flex items-center gap-2"
@@ -296,7 +296,7 @@ export default function Home() {
                         <span className="bg-[#131d2f] text-white px-3 py-1 rounded-full text-xs font-semibold">
                           {noticia.categoria}
                         </span>
-                        <span className="text-gray-400 text-sm">{noticia.data}</span>
+                        <span className="text-gray-400 text-sm">{new Date(noticia.data).toLocaleDateString('pt-BR')}</span>
                       </div>
                       
                       <h4 className="text-lg font-bold text-[#131d2f] mb-2 group-hover:text-[#ffdc61] transition-colors line-clamp-2">
