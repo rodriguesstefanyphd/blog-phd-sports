@@ -99,7 +99,7 @@ export default function NoticiaClient({ noticia, outrasNoticias }: Props) {
                 <span>{noticia.autor}</span>
               </div>
               <span>•</span>
-              <span>{new Date(noticia.data).toLocaleDateString('pt-BR', { 
+              <span>{new Date(noticia.data + 'T12:00:00').toLocaleDateString('pt-BR', { 
                 day: 'numeric', 
                 month: 'long', 
                 year: 'numeric' 
