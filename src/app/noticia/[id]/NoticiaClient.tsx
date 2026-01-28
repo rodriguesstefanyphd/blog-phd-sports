@@ -142,7 +142,7 @@ export default function NoticiaClient({ noticia, outrasNoticias }: Props) {
               <p className="text-xl italic mb-4">
                 "Nosso objetivo é transformar vidas através do esporte, oferecendo estrutura de qualidade e suporte completo aos nossos franqueados."
               </p>
-              <cite className="text-[#ffdc61] font-semibold">— Diretoria Ph.D Sports</cite>
+              <cite className="text-[#ffdc61] font-semibold">— Viktor Rossa, CEO Ph.D Sports</cite>
             </blockquote>
           </div>
 
