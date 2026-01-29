@@ -178,7 +178,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {noticiasDestaque.map((noticia, index) => (
-              <Link href={`/noticia/${noticia.id}`} key={noticia.id}>
+              <Link href={`/noticia/${noticia.slug}`} key={noticia.id}>
                 <motion.article
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -275,7 +275,7 @@ export default function Home() {
               className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
               {noticiasFiltradas.map((noticia, index) => (
-                <Link href={`/noticia/${noticia.id}`} key={noticia.id}>
+                <Link href={`/noticia/${noticia.slug}`} key={noticia.id}>
                   <motion.article
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}

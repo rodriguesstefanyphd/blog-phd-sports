@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 interface Noticia {
   id: number;
+  slug: string;
   titulo: string;
   resumo: string;
   conteudo: string;
@@ -22,6 +23,10 @@ interface Props {
 }
 
 export default function NoticiaClient({ noticia, outrasNoticias }: Props) {
+  const shareUrl = `https://noticias.academiaphdsports.com.br/noticia/${noticia.slug}`;
+  const shareText = encodeURIComponent(noticia.titulo);
+  const shareUrlEncoded = encodeURIComponent(shareUrl);
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -99,11 +104,13 @@ export default function NoticiaClient({ noticia, outrasNoticias }: Props) {
                 <span>{noticia.autor}</span>
               </div>
               <span>•</span>
-              <span>{new Date(noticia.data + 'T12:00:00').toLocaleDateString('pt-BR', { 
-                day: 'numeric', 
-                month: 'long', 
-                year: 'numeric' 
-              })}</span>
+              <time dateTime={noticia.data}>
+                {new Date(noticia.data + 'T12:00:00').toLocaleDateString('pt-BR', { 
+                  day: 'numeric', 
+                  month: 'long', 
+                  year: 'numeric' 
+                })}
+              </time>
             </motion.div>
           </div>
         </div>
@@ -111,18 +118,20 @@ export default function NoticiaClient({ noticia, outrasNoticias }: Props) {
 
       {/* Conteúdo */}
       <div className="max-w-4xl mx-auto px-4 py-16">
-        <motion.div
+        <motion.article
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
+          itemScope
+          itemType="https://schema.org/NewsArticle"
         >
           {/* Resumo destacado */}
-          <p className="text-xl md:text-2xl text-[#131d2f] font-medium leading-relaxed mb-8 border-l-4 border-[#ffdc61] pl-6">
+          <p className="text-xl md:text-2xl text-[#131d2f] font-medium leading-relaxed mb-8 border-l-4 border-[#ffdc61] pl-6" itemProp="description">
             {noticia.resumo}
           </p>
 
           {/* Conteúdo principal */}
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none" itemProp="articleBody">
             {noticia.conteudo.split('\n\n').map((paragraph, idx) => {
               if (paragraph.startsWith('## ')) {
                 return (
@@ -131,16 +140,23 @@ export default function NoticiaClient({ noticia, outrasNoticias }: Props) {
                   </h2>
                 );
               }
+              // Render bold text within paragraphs
+              const parts = paragraph.split(/(\*\*[^*]+\*\*)/g);
               return (
                 <p key={idx} className="text-gray-700 leading-relaxed text-lg mb-6">
-                  {paragraph}
+                  {parts.map((part, i) => {
+                    if (part.startsWith('**') && part.endsWith('**')) {
+                      return <strong key={i}>{part.slice(2, -2)}</strong>;
+                    }
+                    return part;
+                  })}
                 </p>
               );
             })}
 
             <blockquote className="bg-[#131d2f] text-white p-8 rounded-2xl my-8 border-l-4 border-[#ffdc61]">
               <p className="text-xl italic mb-4">
-                "Nosso objetivo é transformar vidas através do esporte, oferecendo estrutura de qualidade e suporte completo aos nossos franqueados."
+                &ldquo;Nosso objetivo é transformar vidas através do esporte, oferecendo estrutura de qualidade e suporte completo aos nossos franqueados.&rdquo;
               </p>
               <cite className="text-[#ffdc61] font-semibold">— Viktor Rossa, CEO Ph.D Sports</cite>
             </blockquote>
@@ -148,7 +164,7 @@ export default function NoticiaClient({ noticia, outrasNoticias }: Props) {
 
           {/* Tags */}
           <div className="flex flex-wrap gap-3 mt-12 pt-8 border-t border-gray-200">
-            {['Fitness', 'Empreendedorismo', 'Franquias', 'Negócios'].map(tag => (
+            {['Fitness', 'Empreendedorismo', 'Franquias', 'Negócios', noticia.categoria].map(tag => (
               <span 
                 key={tag}
                 className="bg-gray-100 text-[#131d2f] px-4 py-2 rounded-full text-sm font-medium hover:bg-[#131d2f] hover:text-white transition-colors cursor-pointer"
@@ -162,25 +178,53 @@ export default function NoticiaClient({ noticia, outrasNoticias }: Props) {
           <div className="flex items-center gap-4 mt-8 p-6 bg-gray-100 rounded-2xl">
             <span className="font-semibold text-[#131d2f]">Compartilhar:</span>
             <div className="flex gap-3">
-              {[
-                { icon: '📘', name: 'Facebook' },
-                { icon: '🐦', name: 'Twitter' },
-                { icon: '💼', name: 'LinkedIn' },
-                { icon: '📱', name: 'WhatsApp' },
-              ].map(social => (
-                <motion.button
-                  key={social.name}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow"
-                  title={social.name}
-                >
-                  {social.icon}
-                </motion.button>
-              ))}
+              <motion.a
+                href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrlEncoded}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow"
+                title="Facebook"
+              >
+                📘
+              </motion.a>
+              <motion.a
+                href={`https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrlEncoded}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow"
+                title="Twitter"
+              >
+                🐦
+              </motion.a>
+              <motion.a
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrlEncoded}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow"
+                title="LinkedIn"
+              >
+                💼
+              </motion.a>
+              <motion.a
+                href={`https://api.whatsapp.com/send?text=${shareText}%20${shareUrlEncoded}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-shadow"
+                title="WhatsApp"
+              >
+                📱
+              </motion.a>
             </div>
           </div>
-        </motion.div>
+        </motion.article>
 
         {/* CTA Franqueado */}
         <motion.div 
@@ -227,7 +271,7 @@ export default function NoticiaClient({ noticia, outrasNoticias }: Props) {
                 transition={{ delay: index * 0.1 }}
                 className="card-hover group bg-gray-50 rounded-2xl overflow-hidden shadow-lg"
               >
-                <Link href={`/noticia/${item.id}`}>
+                <Link href={`/noticia/${item.slug}`}>
                   <div className="relative h-48 overflow-hidden">
                     <img 
                       src={item.imagem} 
